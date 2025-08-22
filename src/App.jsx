@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:8000/products");
+        const response = await fetch("http://localhost:5173/api/products");
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
